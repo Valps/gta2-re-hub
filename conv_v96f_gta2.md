@@ -32,6 +32,7 @@
 47ECE0  miss2_0x11C::launch_mission_5119A0
 47DAD0  miss2_0x11C::sub_50F270
 47D170  miss2_0x11C::SCRCMD_CHECK_CAR_SPEED_50E360
+47F760  miss2_0x11C::DeallocOrDeleteItem_505B10
 
 481960  frosty_pasteur_0xC1EA8::ctor_512CE0
 481890  frosty_pasteur_0xC1EA8::Update_512160
@@ -130,7 +131,14 @@
 440CC0  Char_C::SpawnDummies_46EB60
 
 49C460  Char_B4::sub_545720
+49A560  Char_B4::state_0_54DDF0
+49B0D0  Char_B4::state_1_5504F0
+49BAD0  Char_B4::state_3_551A00
+496800  Char_B4::state_4_551B30
+49BC20  Char_B4::state_5_551BB0
+49BD10  Char_B4::state_7_551CB0
 496880  Char_B4::state_8_5520A0
+49C120  Char_B4::state_9_552E90
 495540  Char_B4::sub_54C500
 495220  Char_B4::sub_54C1A0
 497DF0  Char_B4::sub_546360
@@ -139,6 +147,8 @@
 
 4820D0  youthful_einstein::sub_516590
 
+417410  sound_obj::ProcessActiveQueues_41AB80
+417260  sound_obj::AddReleasingSounds_41A9D0
 417030  sound_obj::InterrogateAudioEntities_41A730
 4163A0  sound_obj::ProcessEntity_4123A0
 4B2D50  sound_obj::ProcessType3_57DD50
