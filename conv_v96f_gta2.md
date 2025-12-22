@@ -3,7 +3,7 @@
 4D1170  WinMain_5E53F0
 
 45B470  Game_0x40::sub_4B8C40
-45B5F0  Game_0x40::sub_4B8EB0
+45B5F0  Game_0x40::BootGame_4B8EB0
 45C1F0  Game_0x40::sub_4B9410
 45C3B0  Game_0x40::sub_4B9640
 45A650  Game_0x40::sub_4B9380
@@ -11,6 +11,7 @@
 45C1F0  Game_0x40::sub_4B9410
 45A5A0  Game_0x40::Draw_4B92D0
 45BC10  Game_0x40::is_point_on_screen_4B9A80
+45A690  Game_0x40::sub_4B93C0
 
 481400  miss2_0x11C::ExecOpCode_5061C0
 4805B0  miss2_0x11C::PreExecOpCode_5108D0
@@ -56,6 +57,7 @@
 46A420  Map_0x370::FindGroundZForCoord_4E5B60
 466B70  Map_0x370::sub_4E5BF0
 464250  Map_0x370::sub_4E8C00
+464330  Map_0x370::do_process_loaded_zone_data_4E8E30
 463990  Map_sub::sub_4E80E0
 4690B0  gmp_map_zone::sub_4DEF40
 463940  gmp_compressed_map_32::sub_4E80A0
@@ -94,6 +96,7 @@
 4A6A80  Player::sub_56A0F0
 4A51C0  Player::sub_5645B0
 4A4CF0  Player::sub_5686D0
+4A61F0  Player::sub_569410
 
 4454E0  Ped::sub_462E70
 4454D0  Ped::sub_4632E0
@@ -202,6 +205,35 @@
 46C0C0  MapRenderer::Set_UV_4F4190
 46B620  MapRenderer::set_shading_lev_4E9DB0
 46BBF0  MapRenderer::set_vert_xyz_relative_to_cam_4EAD90
+472110  MapRenderer::Draw_4F6A20
+46EDD0  MapRenderer::DrawDiagonalSlopes_4F02D0
+46D810  MapRenderer::sub_4ECE40
+46D680  MapRenderer::sub_4ECAF0
+46C2C0  MapRenderer::sub_4EA390
+46F370  MapRenderer::sub_4F1660
+46D360  MapRenderer::sub_4EC450
+46D4F0  MapRenderer::sub_4EC7A0
+
+46EF10  MapRenderer::sub_4F0420
+46F370  MapRenderer::sub_4F1660
+46F7C0  MapRenderer::sub_4F22F0
+46FC10  MapRenderer::sub_4F33B0
+
+46EE40  MapRenderer::sub_4F0340
+
+tri sided:
+46E490  MapRenderer::Draw3SidedDiagonalUpLeft_4EEAF0
+46E5C0  MapRenderer::Draw3SidedDiagonalUpRight_4EEE60
+46E6E0  MapRenderer::Draw3SidedDiagonalDownLeft_4EF1C0
+46E800  MapRenderer::Draw3SidedDiagonalDownRight_4EF520
+
+four sided:
+46E910  MapRenderer::Draw4SidedDiagonalUpLeft_4EF880
+46EA30  MapRenderer::Draw4SidedDiagonalUpRight_4EFB20
+46EB60  MapRenderer::Draw4SidedDiagonalDownLeft_4EFDB0
+46EC90  MapRenderer::Draw4SidedDiagonalDownRight_4F0030
+
+46C210  draw_4E9EE0
 
 44B8B0  Montana::Draw_495560	[has inlines]
 
@@ -211,6 +243,8 @@
 432D10  CarInfo_808::sub_4546D0
 41D800  sub_430A30
 41D620  sub_430C70
+432EA0  CarInfo_808::sub_454850
+432AA0  CarInfo_2C::sub_4542A0
 
 40FBE0  Car_A4_10::sub_408220
 4BEF70  Object_3C::sub_5A6F70
@@ -349,4 +383,90 @@
 4BF840  gtx_0x106C::sub_5AAB30
 
 4CAEB0  sub_5D7CB0
+
+NEW:
+
+491C50  Particle_8::ParticlesService_53E320
+490760  Particle_4C::sub_53D260
+490130  Particle_4C::sub_53BAC0
+4932D0  sub_5537F0
+
+4416B0  Char_C::ctor_470650
+497A60  Char_B4::ctor_544FF0
+
+4A76D0  Player::HandleControls_5668D0
+4A4C40  Player::DoCarControlInputs_566C30
+429810  Car_BC::HandleUserInput_4418D0
+
+460DE0  magical_germain_0x8EC::sub_4D2B40
+
+485ED0  Object_5C::sub_5297F0
+4852E0  Object_5C::sub_5299B0
+484E00  Object_5C::New_529C00
+
+44B490  sub_495470
+4CBDB0  sub_5D8470
+
+47EF40  frosty_pasteur_0xC1EA8::SaveGame_511E10
+4A6B20  Player::CopyPlayerDataToSave_56A1A0
+
+429660  Car_BC::sub_441360
+451300  FirefighterPool_54::sub_4A8620
+
+4A5E90  Player::sub_566EE0
+4A1DA0  CarPhysics_B0::ShowPhysicsDebug_559430
+49F660  CarPhysics_B0::CalculateMass_559FF0
+421CF0  Car_BC::get_mass_43A120
+
+447C00  PurpleDoom::sub_477B20
+4BCB40  Sprite::sub_59E9C0
+
+4BE060  Sprite::Draw_59EFF0
+4BCBD0  ????????
+44B0C0  sub_44B0C0
+44AEA0  sub_48F820
+4BF230  gtx_0x106C::sub_5AA3F0
+
+481900  frosty_pasteur_0xC1EA8::ExecuteScriptThreads_5127A0
+
+4B08A0  PublicTransport_181C::SetupTrainAndBusStops_5794B0
+
+447390  PurpleDoom::DrawSpritesClipped_477A40
+446D60  PurpleDoom::AddToDrawList_478240
+44B990  Montana::DisplayAdd_495510
+4C4BF0  Montana_4::AddSprite_5C5CF0
+
+4BD2E0  Sprite::sub_5A1BD0
+4BD290  Sprite::sub_5A1A60
+4BBD40  Sprite_4C::sub_5A3550
+
+4A2F20  CarPhysics_B0::ApplyInputsAndIntegratePhysics_562F30
+4A0C60  CarPhysics_B0::UpdateLinearAndAngularAccel_560EB0
+4A17C0  CarPhysics_B0::ApplyArrowSteerAssist
+4A1130  CarPhysics_B0::CalculateFrontSkid_561E50
+
+4327A0  Car_78::sub_453BB0
+4326E0  Car_78::sub_453470
+432370  Car_78::sub_452DF0
+42D390  Car_78::sub_44E0C0
+4268C0  Car_BC::sub_444E40
+424FF0  Car_BC::sub_445EC0
+49EE50  CarPhysics_B0::SnapVelocityToSpriteDirection_563590
+
+4C1F80  DoTest_5B2640
+4A8340  Player::sub_569E70
+
+41F410  Camera_0xBC::sub_436540
+41EE30  Camera_0xBC::sub_4364A0
+
+4C9B40  sub_5D61A0
+
+4692B0  Map_0x370::update_lights_4DFCD0
+461400  Light::sub_4D6E50
+
+4853C0  Object_5C::NewLight_529AB0
+
+Compiler flags:
+/TP /Ox /G3 /Ob0
+
 ```
