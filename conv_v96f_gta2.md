@@ -35,6 +35,8 @@
 47D170  miss2_0x11C::SCRCMD_CHECK_CAR_SPEED_50E360
 47F760  miss2_0x11C::DeallocOrDeleteItem_505B10
 
+476BC0  Miss2_25C::sub_502DC0
+
 481960  frosty_pasteur_0xC1EA8::ctor_512CE0
 481890  frosty_pasteur_0xC1EA8::Update_512160
 47F0B0  frosty_pasteur_0xC1EA8::sub_511F80
@@ -97,6 +99,7 @@
 4A51C0  Player::sub_5645B0
 4A4CF0  Player::sub_5686D0
 4A61F0  Player::sub_569410
+4A6050  Player::RespawnPlayer_5670B0
 
 4454E0  Ped::sub_462E70
 4454D0  Ped::sub_4632E0
@@ -126,6 +129,12 @@
 445330  Ped::sub_462280
 434D70  Ped::GetWeaponFromPed_46F110
 4333A0  Ped::sub_45EDE0
+43ABA0  Ped::sub_46F1E0
+435E40  Ped::sub_45BE30
+43E140  Ped::RespawnPed_45C350
+
+4CFEC0  Weapon_30::tank_main_gun_5E10E0
+4CDA90  Weapon_30::spawn_bullet_5DCF60
 
 43DB40  Char_C::sub_470A50
 445A20  Char_C::sub_4703F0
@@ -145,6 +154,8 @@
 495540  Char_B4::sub_54C500
 495220  Char_B4::sub_54C1A0
 497DF0  Char_B4::sub_546360
+493640  Char_B4::sub_5453D0
+494180  Char_B4::sub_548590
 
 461360  nostalgic_ellis_0x28::sub_4D6D70
 
@@ -199,7 +210,7 @@
 471F20  MapRenderer::sub_4F6880		[TODO: get all v96f addresses!]
 46EDD0  MapRenderer::sub_4F02D0
 46DFE0  MapRenderer::draw_lid_4EE130
-470250  MapRenderer::sub_4EAF40
+46C7F0  MapRenderer::sub_4EAF40
 471C30  MapRenderer::draw_slope_4F6580
 470800  MapRenderer::draw_lid_4F4D60
 46C0C0  MapRenderer::Set_UV_4F4190
@@ -213,6 +224,8 @@
 46F370  MapRenderer::sub_4F1660
 46D360  MapRenderer::sub_4EC450
 46D4F0  MapRenderer::sub_4EC7A0
+46CE30  MapRenderer::sub_4EBA60
+470060  MapRenderer::draw_left_4F3C00
 
 46EF10  MapRenderer::sub_4F0420
 46F370  MapRenderer::sub_4F1660
@@ -253,6 +266,9 @@ four sided:
 4B4E60  Car_14::sub_583670
 4B4A60  Car_14::sub_5832C0
 4B4A00  Car_14::sub_583260
+4B34E0  Car_14::SpawnTrafficCar_582480
+
+446930  Car_6C::CanAllocateOfType_446930
 
 4CAB50  Hud_2B00::sub_5D69D0
 4CA890  Hud_Arrow_7C_Array::sub_5D0FD0
@@ -343,6 +359,7 @@ four sided:
 4AEE70  Police_7B8::sub_577370
 4AA710  Police_7B8::SpawnWalkingGuard_570320
 4A9500  Police_7B8::sub_56F4D0
+4AA7B0  Police_7B8::FBI_Army_5703E0
 
 4AD600  Police_38::sub_575590   	(switch cases!)
 4AC080  Police_38::State3_Arrest_572340
@@ -381,6 +398,12 @@ four sided:
 4C05B0  gtx_0x106C::LoadChunk_5AB4B0
 4BFA60  gtx_0x106C::load_delta_index_5AAD80
 4BF840  gtx_0x106C::sub_5AAB30
+
+4BEF70  struct_4::PoolUpdate_5A6F70
+4BE870  Sprite_18::PoolUpdate_5A6910
+49C460  Char_B4::sub_545720
+497DF0  Char_B4::sub_546360
+4AABB0  Police_7B8::sub_5707B0
 
 4CAEB0  sub_5D7CB0
 
@@ -465,6 +488,15 @@ NEW:
 461400  Light::sub_4D6E50
 
 4853C0  Object_5C::NewLight_529AB0
+
+4626D0  do_inputs_4DAF30
+45FD10  BurgerKing_67F8B0::get_input_bits_4CEAC0
+44C0F0  BurgerKing_1::read_input_device_498DA0
+
+4D0ED0  Start_NetworkGame_5E5A30
+
+477F60  PurpleDoom::sub_477F60
+446DE0  PurpleDoom::sub_4785D0
 
 Compiler flags:
 /TP /Ox /G3 /Ob0
