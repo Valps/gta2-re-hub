@@ -1,0 +1,11 @@
+site_name: GTA2 RE Hub
+theme:
+  name: material
+  logo: images/Car_BC.png
+  favicon: images/Car_BC.png
+nav:
+  - Home: index.md
+  - 'Getting Started': getting_started.md
+  - '9.6f addresses' : scratches/conv_v96f_gta2.md
+  - 'Var types' : general/types.md
+  - 'Fix16' : classes/fix16.md

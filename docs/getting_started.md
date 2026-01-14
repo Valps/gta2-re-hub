@@ -1,0 +1,65 @@
+# Getting Started
+
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
+## Building
+
+### Prerequisites
+
+* Python >= 3.7
+* Wine (For Linux/Mac)
+* GTA2_ROOT Environment variable pointing to your GTA2 installation
+
+Clone the repository with the `--recursive` flag
+
+```
+git clone --recursive https://github.com/CriminalRETeam/gta2_re.git
+```
+
+### Windows 
+
+```
+pip install -r requirements.txt
+python vc6_setup.py
+python build.py
+```
+
+### Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 vc6_setup.py
+python3 build.py
+```
+
+Optionally, you can automatically run the built exe by passing one of the following arguments to `build.py`:
+
+- `--run_standalone`
+- `--run_patched`
+
+> [!IMPORTANT]
+> To use `--run_patched`, you need to generate the patched exe yourself by running `ExePatcher.exe` within the `build_vc6` folder. The patcher expects the original GTA2 exe (called `10.5.exe`) to be inside the same directory.
+
+
+
+## Contribute to decompiling process
+
+You may need:
+
+* IDA 9.1
+
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
