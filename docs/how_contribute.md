@@ -1,15 +1,5 @@
 ## Contribute to decompiling process
 
-We are decompiling the version 10.5 of GTA2 (also known as Freeloader version). This is a matching decomp, so the main goal is to replicate the original binary as faithfully as possible.
-
-On this project we use the following nomenclatures for GTA2:
-
-* `standalone` version - It is the executable obtaining from building the source code.
-* `patched` version - It is the original executable patched with matched functions.
-* `10.5` - The version of GTA2 we're decompiling.
-* `9.6f` - The version of GTA2 released by Rockstar on Rockstar Classics in 2002-2003.
-* `9.6` - Without the `f`, it's the GTA2 retail version released on `1999`.
-
 For the decompiling process you may need:
 
 * IDA 9.1
