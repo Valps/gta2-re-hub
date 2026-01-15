@@ -27,6 +27,7 @@ nav:
     - 'IDA scripts' : general/ida_scripts.md
     - 'Function Diff' : general/diff.md
   - Classes :
+    - Index : classes/index.md
     - 'Fix16' : classes/fix16.md
     - 'Ang16' : classes/ang16.md
   - '9.6f addresses' : scratches/conv_v96f_gta2.md
