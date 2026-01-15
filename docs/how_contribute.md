@@ -37,9 +37,9 @@ Some classes are essential since they are used almost everywhere on GTA2:
 
 No, you just need the repo files and the prerequisites listed on [Getting Started](getting_started.md).
 
-### What version of GTA2 should I install?
+### What version of GTA2 should I use/install?
 
-Any version can be installed (for example v11.44 here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)). Since the main difference between GTA2 versions are the executable, you should be able to use other versions rather than `10.5`, which is more difficult to find.
+Any version can be installed (for example v11.44 here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)). Since the main difference between GTA2 versions is on the executable, you should be able to use other versions rather than `10.5`, which is more difficult to find.
 
 ## Let's start!
 

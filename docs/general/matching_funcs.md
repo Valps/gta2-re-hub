@@ -1,6 +1,6 @@
 # Matching functions
 
-Setup your IDE or text formatter to use `.clang-format`, which is on repo root folder. This makes the code more cleaner.
+Setup your IDE or text formatter to use `.clang-format`, which is on repo root folder. This makes the code more cleaner and consistent.
 
 ## Default procedure
 
