@@ -10,7 +10,7 @@ cmake
 reccmp
 ```
 
-## 3rdParty
+## /3rdParty/
 
 In 3rdParty folder you will find:
 

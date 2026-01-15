@@ -25,7 +25,7 @@ DEFINE_GLOBAL(MapRenderer*, gpMapRenderer_6F66E4, 0x6F66E4);
 > [!IMPORTANT]
 > When defining a new global, ensure that:
 >
-> * (1) The address registered reflects the original global address;
+> * (1) The address registered is indeed the original global address;
 > * (2) It is not already defined elsewhere on the repository.
 >
 > If you don't give the correct address for a global, then the patched version will hook values/pointers from a wrong address causing bugs on the patched game.
