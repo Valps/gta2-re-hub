@@ -1,11 +1,32 @@
 site_name: GTA2 RE Hub
+site_description: GTA2 Reverse Engineering Hub.
+site_url: https://valps.github.io/gta2-re-hub/
+repo_url: https://github.com/Valps/gta2-re-hub
+repo_name: Valps/gta2-re-hub
+
 theme:
   name: material
   logo: images/Car_BC.png
   favicon: images/Car_BC.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tabs
 nav:
   - Home: index.md
   - 'Getting Started': getting_started.md
+  - 'How to contribute' : how_contribute.md
+  - General info :
+    - Index : general/index.md
+    - 'Repo Folders' : general/repo_folders.md
+    - 'Var types' : general/types.md
+    - 'Markers' : general/markers.md
+    - 'Globals' : general/globals.md
+    - 'Patching' : general/patcher.md
+    - 'IDA scripts' : general/ida_scripts.md
+    - 'Function Diff' : general/diff.md
+  - Classes :
+    - 'Fix16' : classes/fix16.md
+    - 'Ang16' : classes/ang16.md
   - '9.6f addresses' : scratches/conv_v96f_gta2.md
-  - 'Var types' : general/types.md
-  - 'Fix16' : classes/fix16.md

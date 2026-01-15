@@ -2,7 +2,7 @@
 
 Floats/doubles are rarely used in GTA2. Instead, in most cases it uses a fixed point class which we called `Fix16`. It consists by a single 32 bits signed attribute called `mValue`.
 
-The precision used in GTA2 for fixed points is `16384 = 0x4000`. So a Fix16 with `mValue = 16384` means that it is equivalent to `1.0` in float.
+The precision used in GTA2 for fixed points is `16384 = 0x4000`. So a Fix16 with `mValue = 16384` is equivalent to `1.0` in float.
 
 ## Convertions
 
@@ -156,5 +156,5 @@ Fix16(s32 value, u8) : mValue(value)
 }
 ```
 
-So, in this way, `Fix16 var = Fix16(0x4000, 0)` means that `mValue` assumes `0x4000` instead of `0x4000 * 16384`.
+So, in this way, `Fix16 var = Fix16(0x4000, 0)` means that `mValue` assumes `0x4000` without any conversion.
 

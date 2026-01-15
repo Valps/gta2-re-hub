@@ -1,6 +1,6 @@
 # Getting Started
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+(WIP)
 
 ## Building
 
@@ -42,24 +42,6 @@ Optionally, you can automatically run the built exe by passing one of the follow
 > [!IMPORTANT]
 > To use `--run_patched`, you need to generate the patched exe yourself by running `ExePatcher.exe` within the `build_vc6` folder. The patcher expects the original GTA2 exe (called `10.5.exe`) to be inside the same directory.
 
+## How to contribute to the decompiling process?
 
-
-## Contribute to decompiling process
-
-You may need:
-
-* IDA 9.1
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+See [Contribute to decompiling process](how_contribute.md).
