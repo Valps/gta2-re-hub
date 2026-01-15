@@ -46,4 +46,4 @@ Any version can be installed (for example v11.44 here: [https://gtamp.com/gta2/]
 There are mainly two ways to contribute for this project:
 
 * [Matching functions](general/matching_funcs.md) - How to match new functions and include them into the repository.
-* [Renaming functions or attributes](general/renaming.md) - There are many unknown attributes for many classes and way many functions without a proper name. This section also explains how to fiddle with the patched version to find what they do.
+* [Renaming functions or attributes](general/renaming.md) - There are many unknown attributes for many classes and way many functions without a proper name. You can figure them out and rename according to what it does.
