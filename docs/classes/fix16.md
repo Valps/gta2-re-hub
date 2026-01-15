@@ -51,7 +51,7 @@ The reason that the `ToInt()` method doesn't appear on IDA is because many of `F
 
 ### Converting integer type into Fix16
 
-The other very used conversion is the opposite. Instead of `>> 14`, we find `<< 14`. It is contained in one of the constructors of Fix16:
+The other very used conversion is the opposite operation: convert an integer into Fix16. Instead of `>> 14`, we find `<< 14`. It is contained in one of Fix16 constructors:
 
 ```
 Fix16(s32 value)
