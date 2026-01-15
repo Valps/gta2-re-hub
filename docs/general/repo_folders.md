@@ -67,4 +67,4 @@ On this folder you will find the file `vc6.cmake` which contains the compiler fl
 
 ## /reccmp/
 
-This folder contains files related with the tool `reccmp` from https://github.com/isledecomp/reccmp . It's not fully functional yet as some actually matched functions are being reported with mismatches.
+This folder contains files related with the tool `reccmp` from https://github.com/isledecomp/reccmp . It's not fully functional yet as some matched functions have some specific issues with reccmp.
