@@ -23,7 +23,7 @@ nav:
     - 'Var types' : general/types.md
     - 'Markers' : general/markers.md
     - 'Globals' : general/globals.md
-    - 'Patching' : general/patcher.md
+    - 'Patching' : general/patching.md
     - 'IDA scripts' : general/ida_scripts.md
     - 'Function Diff' : general/diff.md
   - Classes :

@@ -54,7 +54,7 @@ The most useful script is `import_match_status.py`, which updates the color of I
 It contains all source code required to compile & build the following files:
 
 * `decomp_main.exe` - Game main executable;
-* `ExePatcher.exe` - Patcher: it patches functions marked with `MATCH_FUNC` into original executable. [See more](patcher.md);
+* `ExePatcher.exe` - Patcher: it patches functions marked with `MATCH_FUNC` into original executable. [See more](patching.md);
 * `HookLoader.dll` - Hook loader for globals and functions into original executable;
 * `gta2_dll_exports.dll` - Export dll;
 * `gta2_dll_imports.dll` - Import dll;

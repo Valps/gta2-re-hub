@@ -19,7 +19,7 @@ For decompiling functions you may need:
 * [Repository folders](general/repo_folders.md) - Get acquainted with the project folders.
 * [Variable types](general/types.md) - See what typedefs we use on this project.
 * [Declaring globals](general/globals.md) - How we define globals on GTA2 and how they work.
-* [Patching](general/patcher.md) - Patching our functions into original GTA2.
+* [Patching](general/patching.md) - Patching our functions into original GTA2.
 
 ## Very important classes
 
