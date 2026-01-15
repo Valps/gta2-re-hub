@@ -49,6 +49,9 @@ Optionally, you can automatically run the built exe by passing one of the follow
 - `--run_standalone`
 - `--run_patched`
 - `--ignore_no_match`
+- `--cores [number]` (maximum number of cpu cores to build with)
+- `--reccmp` (for reccmp analysis)
+- `--single_cpp [filename]` (useful for using objdiff)
 
 > [!IMPORTANT]
 > To use `--run_patched`, you need to generate the patched exe yourself by running `ExePatcher.exe` within the `build_vc6` folder. The patcher expects the original GTA2 exe (called `10.5.exe`) to be inside the same directory.
