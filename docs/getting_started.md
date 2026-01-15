@@ -42,6 +42,8 @@ Optionally, you can automatically run the built exe by passing one of the follow
 > [!IMPORTANT]
 > To use `--run_patched`, you need to generate the patched exe yourself by running `ExePatcher.exe` within the `build_vc6` folder. The patcher expects the original GTA2 exe (called `10.5.exe`) to be inside the same directory.
 
+After building it successfully, it will start a verification check to ensure that all functions marked with `MATCH_FUNC` indeed matches with the respective original binary functions.
+
 ## How to contribute to the decompiling process?
 
 See [Contribute to decompiling process](how_contribute.md).

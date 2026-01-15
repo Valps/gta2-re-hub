@@ -7,10 +7,10 @@ On this project we use the following nomenclatures for GTA2:
 * `standalone` version - It is the executable obtaining from building the source code.
 * `patched` version - It is the original executable patched with matched functions.
 
-For decompiling functions you may need:
+For the decompiling process you may need:
 
 * IDA 9.1
-* An IDE with `clang` formatting or a formatter
+* An IDE with `clang` formatting or a text formatter
 * Python >= 3.7
 
 ### Get acquainted with the project
@@ -19,13 +19,13 @@ For decompiling functions you may need:
 * [Repository folders](general/repo_folders.md) - Get acquainted with the project folders.
 * [Variable types](general/types.md) - See what typedefs we use on this project.
 * [Declaring globals](general/globals.md) - How we define globals on GTA2 and how they work.
-* [Patching](general/patching.md) - Patching our functions into original GTA2.
+* [Patching](general/patching.md) - Patching our functions into original GTA2 executable.
 
 ## Very important classes
 
 Some classes are essential since they are used almost everywhere on GTA2:
 
-* [Fix16](classes/fix16.md) - This is how the game avoids using floating numbers (except when really needed them).
+* [Fix16](classes/fix16.md) - This is how the game avoids using floating points (except when it really need them).
 * [Ang16](classes/ang16.md) - Another "Fix16" but for angles and rotations. They are fixed point but with less precision.
 
 ## Let's start!
