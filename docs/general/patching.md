@@ -6,7 +6,7 @@ To get the patched version, first you have to build the game by running `build.p
 
 After building it successfully, a new folder `build_vc6` will be created containing all built files. Then you put the original GTA2 executable (version 10.5) on this folder with the name `10.5.exe` and finally run `ExePatcher.exe`, which is in the same folder (`/build_vc6/`).
 
-> After building, if the original executable isn't on `Scripts/bin_comp/`, it will download it. Then you can copy the executable into `/build_vc6/`.
+> After building, if the original executable isn't on `Scripts/bin_comp/`, it will download it. Then you can copy the executable `10.5.exe` into `/build_vc6/`.
 
 If it patched correctly, a new file called `10.5.new.exe` will appear on `/build_vc6/`. Then copy this executable into the game installation root folder.
 
