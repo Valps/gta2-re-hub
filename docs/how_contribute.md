@@ -29,7 +29,15 @@ No, you just need the repo files and the prerequisites listed on [Getting Starte
 
 ### What version of GTA2 should I use/install?
 
-Any version can be installed (for example v11.44 here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)). Since the main difference between GTA2 versions is on the executable, you should be able to use other versions rather than `10.5`, which is more difficult to find.
+We decompile functions of version 10.5, so for the decompiling process you will need the version 10.5 of the GTA2 executable. It's downloaded automatically after building, locating at `/Scripts/bin_comp/10.5.exe`.
+
+On the other hand, if you want to test the build/executable, you need the game files. You will find many versions (like from R* Classics, GTAMP, Freeloader etc) but they all will work, since the game asset files (maps, script, audio etc) are basically the same. You can download the version v11.44 of the game (including only necessary game files) here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)
+
+The version 9.6f has different addresses from 10.5. However, we still look into 9.6f because some 10.5 functions only match using 9.6f inlined functions as version 9.6f has inlines disabled and thus we can see these functions calls.
+
+### Why is the version 9.6f so important for decompiling 10.5?
+
+The version 9.6f has different addresses from 10.5. However, we still look into 9.6f because some 10.5 functions only match using 9.6f inlined functions as version 9.6f has inlines disabled and thus we can see these functions calls.
 
 ## Let's start!
 

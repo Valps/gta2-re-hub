@@ -62,7 +62,9 @@ The decomp build file will be on `/build_vc6/` named `decomp_main.exe`. You can 
 
 ### What version of GTA2 should I use/install?
 
-Any version can be installed (for example v11.44 here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)). Since the main difference between GTA2 versions is on the executable, you should be able to use other versions rather than `10.5`, which is more difficult to find.
+We decompile functions of version 10.5, so for the decompiling process you will need the version 10.5 of the GTA2 executable. It's downloaded automatically after building, locating at `/Scripts/bin_comp/10.5.exe`.
+
+On the other hand, if you want to test the build/executable, you need the game files. You will find many versions (like from R* Classics, GTAMP, Freeloader etc) but they all will work, since the game asset files (maps, script, audio etc) are basically the same. You can download the version v11.44 of the game (including only necessary game files) here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)
 
 ## How to contribute to the decompiling process?
 
