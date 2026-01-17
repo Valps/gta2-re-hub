@@ -26,8 +26,13 @@ nav:
     - 'Patching' : general/patching.md
     - 'IDA scripts' : general/ida_scripts.md
     - 'Function Diff' : general/diff.md
+    - 'Renaming' : general/renaming.md
+    - 'Matching Functions' : general/matching_funcs.md
   - Classes :
     - Index : classes/index.md
     - 'Fix16' : classes/fix16.md
     - 'Ang16' : classes/ang16.md
+    - 'miss2_0x11C' : classes/miss2_0x11C.md
+    - 'Gang' : classes/gangs.md
+    - 'Frontend' : classes/frontend.md
   - '9.6f addresses' : scratches/conv_v96f_gta2.md

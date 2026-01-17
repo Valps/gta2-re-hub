@@ -9,4 +9,6 @@ Here we explain some classes used by GTA2.
 
 ## Other classes
 
-(WIP)
+* [miss2_0x11C](miss2_0x11C.md) - The dorsal spine of missions design and some map features.
+* [Gangs](gangs.md) - The code behind GTA2 gangs.
+* [Frontend](frontend.md) - Main menu
