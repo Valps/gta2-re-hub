@@ -104,3 +104,9 @@ Example:
 ```
 EXTERN_GLOBAL(Sprite*, gSprite_6F61E8);
 ```
+
+For global arrays, we use `EXTERN_GLOBAL_ARRAY`:
+
+```
+EXTERN_GLOBAL_ARRAY(array_type, array_name, array_size);
+```
