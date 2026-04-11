@@ -102,6 +102,7 @@
 4A6050  Player::RespawnPlayer_5670B0
 4A6DA0  Player::ApplyCheats_56A490
 4A5780  Player::CollectPowerUp_564D60
+4A5460  Player::SelectNextOrPrevWeapon_5649D0
 
 4454E0  Ped::sub_462E70
 4454D0  Ped::sub_4632E0
@@ -136,6 +137,12 @@
 43E140  Ped::RespawnPed_45C350
 444930  Ped::sub_46E080
 4402C0  Ped::sub_46DF70
+442DE0  Ped::Occupation_AI_461F20
+43E8B0  Ped::Mugger_AI_45F360
+43F340  Ped::Threat_Reaction_AI_465270
+43FD10  Ped::sub_467E20
+43E650  Ped::Deallocate_45EB60
+435D90  Ped::sub_45BD20
 
 4CFEC0  Weapon_30::tank_main_gun_5E10E0
 4CDA90  Weapon_30::spawn_bullet_5DCF60
@@ -160,6 +167,15 @@
 497DF0  Char_B4::sub_546360
 493640  Char_B4::sub_5453D0
 494180  Char_B4::sub_548590
+493390  Char_B4::sub_553E00
+495BF0  Char_B4::CanStepDiagonal_54EF60
+4995A0  Char_B4::ApplyMovement_54CC40
+492420  Char_B4::CanReachTile_550090
+492190  Char_B4::CanStepForward_54FEC0
+492C30  Char_B4::CanStepInDirection_551350
+495980  Char_B4::CanStepForwardWithRegionCheck_54ECB0
+495700  Char_B4::TickMovementStateMachine_54C900
+4920A0  Char_B4::TurnTowardsAngle_54CAE0
 
 461360  nostalgic_ellis_0x28::sub_4D6D70
 
@@ -178,6 +194,7 @@
 4BA720  Car_14_18::sub_59DE80
 
 4BB020  Sprite::sub_59FB10
+4BDEF0  Sprite::ApplyScaleToDimensions_59E4C0
 
 4566C0  Frontend::sub_4B78B0
 457920  Frontend::sub_4AD140
@@ -271,6 +288,7 @@ four sided:
 4B4A60  Car_14::sub_5832C0
 4B4A00  Car_14::sub_583260
 4B34E0  Car_14::SpawnTrafficCar_582480
+424980  Car_6C::SelectTrafficCarModel_444AB0
 
 446930  Car_6C::CanAllocateOfType_446930
 
@@ -353,6 +371,8 @@ four sided:
 4326E0  Car_78::sub_453470
 432370  Car_78::sub_452DF0
 42D390  Car_78::sub_44E0C0
+431C10  Car_78::sub_452060
+431770  Car_78::sub_451980
 
 42A510  sub_447650
 472C00  Ang16::sub_4F78F0
@@ -502,7 +522,10 @@ NEW:
 477F60  PurpleDoom::sub_477F60
 446DE0  PurpleDoom::sub_4785D0
 
-Compiler flags:
-/TP /Ox /G3 /Ob0
+493940  CarDoorAlignmentSolver_545AF0
+
+9.6f Compiler configurations:
+Compiler: Microsoft Visual C/C++ 7.0 .NET 2002
+Flags: /TP /Ox /G3 /Ob0
 
 ```
