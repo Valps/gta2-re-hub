@@ -19,6 +19,9 @@ If you cross with any of these weird names on this project, know that they were 
 * `keen_bhaskara_0x30` - Weapon_30
 * `Zheal_15C` - Crane_15C
 * `Mouze_44` - PedGroup
+* `competent_noyce_0x6E` - menu_element_0x6E
+* `nifty_maxwell_0x82` - menu_option_0x82
+* `loving_borg_0xBCA` - MenuPage_0xBCA
 * `Car_3C` - Sprite
 * `DrawUnk_0xBC` - Camera
 * `Ped_Unknown_4` - Ped_List_4
