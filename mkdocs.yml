@@ -33,4 +33,7 @@ nav:
     - 'Fix16' : classes/fix16.md
     - 'Ang16' : classes/ang16.md
     - 'Museum' : classes/museum.md
+  - Functions:
+    - Index: functions/index.md
+    - 'Map_0x370' : functions/Map_0x370.md
   - '9.6f addresses' : scratches/conv_v96f_gta2.md

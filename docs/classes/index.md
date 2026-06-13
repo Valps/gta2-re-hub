@@ -19,7 +19,7 @@ Here we explain some classes used by GTA2.
 * `MapRenderer` - Graphical rendering of the map: blocks & tiles
 * `PedGroup` - Group of peds which have a leader. Instant gangs, groups created from script and police/ambulance crews are examples.
 * `Police_7B8` - Police Manager: it's on the top of police classes hierarchy.
-* `PoliceCrew_38` - Seems to be police crew.
+* `PoliceCrew_38` - Seems to be police crews.
 * `PoliceRoadblock_A4` - Police roadblocks
 * `Ambulance_20` - Ambulance crews (`Ambulance_110` is the pool)
 * `Firefighter_28` - Firetrucks
@@ -47,7 +47,7 @@ We didn't give them a name yet but we kinda know what they do:
 * `jolly_poitras_0x2BC0` - Deals with Frontend player scores table and loading player slots from save data.
 * `BurgerKing_67F8B0` - Keyboard/gamepad input handling (for live and replay modes)
 * `Hamburger_500` - Related with car paths.
-* `KFC_1E0` - Seems to be a emergency crew (for police and paramedics)
+* `KFC_1E0` - Seems to be emergency crews (for police and paramedics)
 * `sleepy_stonebraker_0x6C` - Something related with the credits roll.
 * `magical_germain_0x8EC` - Something to do with text sprites and their connection with characters.
 * `lucid_hamilton` - Contains many infos about the game: map name, scr name, sty name, current statistcs (vehicles hijacked etc), gamemode type & max number of players etc.
@@ -63,6 +63,7 @@ We didn't give them a name yet but we kinda know what they do:
 * `Montana_2EE4` - Related with sprite rendering.
 * `Marz_3` - Ped patrol point.
 * `Phi_74` - Object properties (like mass, friction, if it has shadows etc)
+* `admiring_euler_4` - Stores some information for player slot, such as the last saved area.
 * `youthful_einstein` - Multiplayer class. It includes mostly tag game mechanics.
 
 ### Unknown

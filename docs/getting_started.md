@@ -24,6 +24,8 @@ Clone the repository with the `--recursive` flag
 git clone --recursive https://github.com/CriminalRETeam/gta2_re.git
 ```
 
+Then run `gta2_data_setup.py`, which is located at `/Scripts/`.
+
 ### Windows 
 
 ```
@@ -53,9 +55,6 @@ Optionally, you can automatically run the built exe by passing one of the follow
 - `--reccmp` (for reccmp analysis)
 - `--single_cpp [filename]` (useful for using objdiff)
 
-> [!IMPORTANT]
-> To use `--run_patched`, you need to generate the patched exe yourself by running `ExePatcher.exe` within the `build_vc6` folder. The patcher expects the original GTA2 exe (called `10.5.exe`) to be inside the same directory.
-
 After building it successfully, it will start a verification check to ensure that all functions marked with `MATCH_FUNC` indeed matches with the respective original binary functions.
 
 The decomp build file will be on `/build_vc6/` named `decomp_main.exe`. You can copy it into game folder and run it.
@@ -65,6 +64,10 @@ The decomp build file will be on `/build_vc6/` named `decomp_main.exe`. You can 
 We decompile functions of version 10.5, so for the decompiling process you will need the version 10.5 of the GTA2 executable. It's downloaded automatically after building, locating at `/Scripts/bin_comp/10.5.exe`.
 
 On the other hand, if you want to test the build/executable, you need the game files. You will find many versions (like from R* Classics, GTAMP, Freeloader etc) but they all will work, since the game asset files (maps, script, audio etc) are basically the same. You can download the version v11.44 of the game (including only necessary game files) here: [https://gtamp.com/gta2/](https://gtamp.com/gta2/)
+
+### Why is `decomp_main.exe` crashing after choosing a map level in menu?
+
+In order to boot into a GTA2 map on standalone version, before entering the game you need to click at the big red button "`set boot2map debug opts`" located on the top of ImGui window. This initializate some essential variables and disables things that aren't working and causes crashes.
 
 ## How to contribute to the decompiling process?
 
