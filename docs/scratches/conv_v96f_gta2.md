@@ -60,13 +60,6 @@
 466B70  Map_0x370::sub_4E5BF0
 464250  Map_0x370::sub_4E8C00
 464330  Map_0x370::do_process_loaded_zone_data_4E8E30
-466170  Map_0x370::FindSlopeIntersectionAndSpawnMarker_4E1520
-467110  Map_0x370::sub_4E6660
-467020  Map_0x370::sub_4E65A0
-466D30  Map_0x370::sub_4E6190
-46B440  Map_0x370::CanSpriteEnterMovementRegion_4E4460
-46A570  Map_0x370::CanSpriteEnterTile_4E1E00
-466430  Map_0x370::CanSpriteEnterTileRegion_4E1A30
 463990  Map_sub::sub_4E80E0
 4690B0  gmp_map_zone::sub_4DEF40
 463940  gmp_compressed_map_32::sub_4E80A0
@@ -150,13 +143,9 @@
 43FD10  Ped::sub_467E20
 43E650  Ped::Deallocate_45EB60
 435D90  Ped::sub_45BD20
-43A660  Ped::StartPedCrossingAtTrafficLight_X_Forwards_46CC70
-439D30  Ped::ChaseTargetStateMachine_46B170
-439E60  Ped::PullDriverOutOfCarStateMachine_46B2F0
 
 4CFEC0  Weapon_30::tank_main_gun_5E10E0
 4CDA90  Weapon_30::spawn_bullet_5DCF60
-4CE4B0  Weapon_30::smg_5DDD20
 
 43DB40  Char_C::sub_470A50
 445A20  Char_C::sub_4703F0
@@ -187,10 +176,6 @@
 495980  Char_B4::CanStepForwardWithRegionCheck_54ECB0
 495700  Char_B4::TickMovementStateMachine_54C900
 4920A0  Char_B4::TurnTowardsAngle_54CAE0
-4955F0  Char_B4::ApplyRandomRotationJitter_54C6C0
-4928B0  Char_B4::GetNextRotationToward_550F60
-496500  Char_B4::ChooseNextMovementTile_551400
-492D00  Char_B4::SelectNextTileFast_5516F0
 
 461360  nostalgic_ellis_0x28::sub_4D6D70
 
@@ -210,13 +195,6 @@
 
 4BB020  Sprite::sub_59FB10
 4BDEF0  Sprite::ApplyScaleToDimensions_59E4C0
-4B9A30  Sprite::ShouldCollideWithSprite_59E850
-4BDF20  Sprite::CheckDirectionalSliceCollision_59E680
-4BCAC0  Sprite::CollisionCheck_59E590
-4BB560  Sprite::RotatedRectCollisionSAT_5A0380
-4BB020  Sprite::IntersectsRectSAT_59FB10
-4BD8A0  Sprite::FindCollisionIntersectionPoint_5A2710
-4BD670  Sprite::CheckSpriteMovementRegion_5A2500
 
 4566C0  Frontend::sub_4B78B0
 457920  Frontend::sub_4AD140
@@ -234,7 +212,6 @@
 459540  Frontend::sub_4B4230
 457830  Frontend::create_4ACFA0
 456A60  Frontend::ctor_4AF2A0
-45A010  Frontend::sub_4B8280
 
 4A89E0  jolly_poitras_0x2BC0::sub_56BA60
 4A93B0  jolly_poitras_0x2BC0::create_56C2C0
@@ -270,9 +247,6 @@
 46D4F0  MapRenderer::sub_4EC7A0
 46CE30  MapRenderer::sub_4EBA60
 470060  MapRenderer::draw_left_4F3C00
-470250  MapRenderer::sub_4F4250
-470440  MapRenderer::sub_4F4600
-470620  MapRenderer::sub_4F49B0
 
 46EF10  MapRenderer::sub_4F0420
 46F370  MapRenderer::sub_4F1660
@@ -337,9 +311,6 @@ four sided:
 447FE0  Crane_15C::sub_47E730
 
 448C60  Crane_15C::sub_47FBA0
-4497E0  CranePool_D9C::PickUpCar_480E00
-448A80  Crane_15C::PickUpCar_47F930
-448980  Crane_15C::sub_47F7F0
 
 472670  sub_4F7540
 40ECB0  sub_405CE0
@@ -372,13 +343,6 @@ four sided:
 4854C0  Object_5C::sub_52A240
 485180  Object_5C::sub_52A2C0
 484E00  Object_5C::sub_529C00
-487F50  Object_5C::ObjectsService_5293A0
-487E80  Object_2C::Service_5263D0
-487D70  Object_2C::Update_525F30
-487A30  Object_2C::UpdatePhysicsAndMovement_525B80
-482D90  Object_3C::GetMovementSpeedAndAngle_521FD0
-486410  Object_2C::HandleImpact_528E50
-483B50  Object_2C::OnObjectTouched_5288B0
 
 45DA80  Gang_144::sub_4BEEA0
 
@@ -409,7 +373,6 @@ four sided:
 42D390  Car_78::sub_44E0C0
 431C10  Car_78::sub_452060
 431770  Car_78::sub_451980
-430CC0  Car_78::sub_448CE0
 
 42A510  sub_447650
 472C00  Ang16::sub_4F78F0
@@ -444,9 +407,6 @@ four sided:
 425A40  Car_BC::sub_43AFE0
 422D20  Car_BC::ActivateEmergencyLights_43C920
 422D80  Car_BC::DeactivateEmergencyLights_43C9D0
-425810  Car_BC::CanCarCollideWithSprite_43AAF0
-4298B0  Car_BC::TrainUpdate_442D70
-429680  Car_BC::UpdateTrainCarriagesOnTrack_4413B0
 
 4A4570  Car_B0::sub_562FE0
 4A3120  Car_B0::sub_55F330
@@ -525,30 +485,12 @@ NEW:
 
 4BD2E0  Sprite::sub_5A1BD0
 4BD290  Sprite::sub_5A1A60
-4BCFA0  Sprite::GetNearestVerticalEdgeToCoordinate_5A1030
-4BDFE0  Sprite::QuerySpriteCollision_59E7D0
 4BBD40  Sprite_4C::sub_5A3550
 
 4A2F20  CarPhysics_B0::ApplyInputsAndIntegratePhysics_562F30
 4A0C60  CarPhysics_B0::UpdateLinearAndAngularAccel_560EB0
 4A17C0  CarPhysics_B0::ApplyArrowSteerAssist
 4A1130  CarPhysics_B0::CalculateFrontSkid_561E50
-49EE50  CarPhysics_B0::SnapVelocityToSpriteDirection_563590
-4A4490  CarPhysics_B0::ProcessCollisionAndClampVelocity_55F280
-4A4310  CarPhysics_B0::StepMovementAndCollisions_55E470
-4A4270  CarPhysics_B0::ReplayAndDispatchCollision_55CBB0
-4A4170  CarPhysics_B0::DispatchCollision_55CA70
-4A34A0  CarPhysics_B0::HandleCarCollision_55FF20
-4A2D70  CarPhysics_B0::ApplyMovementCommand_55F240
-4A2C70  CarPhysics_B0::ApplyTurningForce_55F020
-4A3DF0  CarPhysics_B0::HandleMapBoundaryCollisionY_55C5C0
-4A3FB0  CarPhysics_B0::HandleMapBoundaryCollisionX_55C820
-4A3A40  CarPhysics_B0::HandleObjectCollision_5606C0
-4A0A30  CarPhysics_B0::ProcessPedImpact_560B40
-4A30A0  CarPhysics_B0::BinarySearchCollisionTime_55C560
-4A0020  CarPhysics_B0::TestCollision_55C150
-
-4A05C0  ComputeLineLineIntersection_55F3B0
 
 4327A0  Car_78::sub_453BB0
 4326E0  Car_78::sub_453470
@@ -556,9 +498,7 @@ NEW:
 42D390  Car_78::sub_44E0C0
 4268C0  Car_BC::sub_444E40
 424FF0  Car_BC::sub_445EC0
-4293D0  Car_BC::OnObjectTouched_43EA60
-
-44B0C0  Delta_48F8B0
+49EE50  CarPhysics_B0::SnapVelocityToSpriteDirection_563590
 
 4C1F80  DoTest_5B2640
 4A8340  Player::sub_569E70
@@ -583,10 +523,6 @@ NEW:
 446DE0  PurpleDoom::sub_4785D0
 
 493940  CarDoorAlignmentSolver_545AF0
-
-4C4B00  TrafficLights_194::sub_5C2AC0
-4C4A30  TrafficLights_194::sub_5C2910
-4C3C70  TrafficLight_20::Init_5C1D00
 
 9.6f Compiler configurations:
 Compiler: Microsoft Visual C/C++ 7.0 .NET 2002
