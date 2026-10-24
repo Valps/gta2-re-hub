@@ -9,7 +9,6 @@ Here we explain some classes used by GTA2.
 
 ## Other classes
 
-* `miss2_0x11C` - The dorsal spine of missions design and some map features.
 * `Gangs` - The code behind GTA2 gangs.
 * `Frontend` - Main menu
 * `Player` - Handling inputs, weapon list, storing and loading save player data etc
