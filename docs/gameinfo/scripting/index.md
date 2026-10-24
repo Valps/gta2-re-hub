@@ -9,5 +9,5 @@ In this section we clarify the GTA2 scripting system.
 
 ## Essential classes
 
-* `ScriptThread` - How to create new opcodes for GTA2 scripting, how it works etc.
-* `ScriptManager` - 
+* `ScriptManager` - Top level of script: controls threads and stores all `.scr` data.
+* `ScriptThread` - Where most of the stuff happens: opcode execution.
