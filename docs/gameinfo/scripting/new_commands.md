@@ -64,7 +64,7 @@ void ScriptThread::SCRCMD_GET_CHAR_COORDS()
 }
 ```
 
-#### Explanation of `SCRCMD_GET_CHAR_COORDS` function: 
+#### Explaining the function: 
 
 First we cast `gBasePtr_6F8070` to `SCR_GET_CHAR_COORDS` pointer type, so we can use our new struct made for this new command. 
 

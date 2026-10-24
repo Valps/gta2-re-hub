@@ -18,8 +18,8 @@ For the decompiling process you may need:
 
 Some classes are essential since they are used almost everywhere on GTA2:
 
-* [Fix16](gameinfo/fix16.md) - This is how the game avoids using floating points (except when it really need them).
-* [Ang16](gameinfo/ang16.md) - Another "Fix16" but for angles and rotations. They are fixed point but with less precision.
+* [Fix16](gameinfo/math/fix16.md) - This is how the game avoids using floating points (except when it really need them).
+* [Ang16](gameinfo/math/ang16.md) - Another "Fix16" but for angles and rotations. They are fixed point but with less precision.
 
 ## Some questions
 

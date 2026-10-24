@@ -4,8 +4,8 @@ Here we list some classes used by GTA2.
 
 ## Essential classes
 
-* [Fix16](fix16.md) - Fixed points, which replaces floating points.
-* [Ang16](ang16.md) - Also fixed points but with lesser precision.
+* [Fix16](math/fix16.md) - Fixed points, which replaces floating points.
+* [Ang16](math/ang16.md) - Also fixed points but with lesser precision.
 
 ## Other classes
 

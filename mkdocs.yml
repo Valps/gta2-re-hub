@@ -13,6 +13,8 @@ theme:
     - navigation.instant.progress
     - navigation.instant.preview
     - navigation.tabs
+    - navigation.path
+    - navigation.indexes
 nav:
   - Home: index.md
   - 'Getting Started': getting_started.md
@@ -30,6 +32,10 @@ nav:
     - 'Matching Functions' : decomp_info/matching_funcs.md
   - Game info :
     - Index : gameinfo/index.md
-    - 'Fix16' : gameinfo/fix16.md
-    - 'Ang16' : gameinfo/ang16.md
-    - 'Museum' : gameinfo/museum.md
+    - 'Scripting' : 
+      - gameinfo/scripting/index.md
+      - 'How commands work' : gameinfo/scripting/how_commands_work.md
+      - 'How to implement new commands' : gameinfo/scripting/new_commands.md
+    - 'Frontend' : 
+      - gameinfo/frontend/index.md
+      - 'Adding new frontend pages' : gameinfo/frontend/new_pages.md
