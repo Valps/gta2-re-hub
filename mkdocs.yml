@@ -13,27 +13,29 @@ theme:
     - navigation.instant.progress
     - navigation.instant.preview
     - navigation.tabs
+    - navigation.path
+    - navigation.indexes
 nav:
   - Home: index.md
   - 'Getting Started': getting_started.md
   - 'How to contribute' : how_contribute.md
-  - General info :
-    - Index : general/index.md
-    - 'Repo Folders' : general/repo_folders.md
-    - 'Var types' : general/types.md
-    - 'Markers' : general/markers.md
-    - 'Globals' : general/globals.md
-    - 'Patching' : general/patching.md
-    - 'IDA scripts' : general/ida_scripts.md
-    - 'Function Diff' : general/diff.md
-    - 'Renaming' : general/renaming.md
-    - 'Matching Functions' : general/matching_funcs.md
-  - Classes :
-    - Index : classes/index.md
-    - 'Fix16' : classes/fix16.md
-    - 'Ang16' : classes/ang16.md
-    - 'Museum' : classes/museum.md
-  - Functions:
-    - Index: functions/index.md
-    - 'Map_0x370' : functions/Map_0x370.md
-  - '9.6f addresses' : scratches/conv_v96f_gta2.md
+  - Decomp info :
+    - Index : decomp_info/index.md
+    - 'Repo Folders' : decomp_info/repo_folders.md
+    - 'Var types' : decomp_info/types.md
+    - 'Markers' : decomp_info/markers.md
+    - 'Globals' : decomp_info/globals.md
+    - 'Patching' : decomp_info/patching.md
+    - 'IDA scripts' : decomp_info/ida_scripts.md
+    - 'Function Diff' : decomp_info/diff.md
+    - 'Renaming' : decomp_info/renaming.md
+    - 'Matching Functions' : decomp_info/matching_funcs.md
+  - Game info :
+    - Index : gameinfo/index.md
+    - 'Scripting' : 
+      - gameinfo/scripting/index.md
+      - 'How commands work' : gameinfo/scripting/how_commands_work.md
+      - 'How to implement new commands' : gameinfo/scripting/new_commands.md
+    - 'Frontend' : 
+      - gameinfo/frontend/index.md
+      - 'Adding new frontend pages' : gameinfo/frontend/new_pages.md
