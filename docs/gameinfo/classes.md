@@ -1,6 +1,6 @@
 # Classes
 
-Here we explain some classes used by GTA2.
+Here we list some classes used by GTA2.
 
 ## Essential classes
 

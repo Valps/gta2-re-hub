@@ -33,6 +33,3 @@ nav:
     - 'Fix16' : gameinfo/fix16.md
     - 'Ang16' : gameinfo/ang16.md
     - 'Museum' : gameinfo/museum.md
-  - Functions:
-    - Index: functions/index.md
-    - 'Map_0x370' : functions/Map_0x370.md
