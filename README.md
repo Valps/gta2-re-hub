@@ -1,2 +1,3 @@
 # gta2_re_personal_hub
-All personal sketches and info on GTA2_re
+
+Information about [GTA2 RE project](https://github.com/CriminalRETeam/gta2_re) and the game.
