@@ -8,18 +8,18 @@ For the decompiling process you may need:
 
 ### Get acquainted with the project
 
-* [Markers](general/markers.md) - How we differ between stubbed functions and matched ones.
-* [Repository folders](general/repo_folders.md) - Get acquainted with the project folders.
-* [Variable types](general/types.md) - See what typedefs we use on this project.
-* [Declaring globals](general/globals.md) - How we define globals on GTA2 and how they work.
-* [Patching](general/patching.md) - Patching our functions into original GTA2 executable.
+* [Markers](decomp_info/markers.md) - How we differ between stubbed functions and matched ones.
+* [Repository folders](decomp_info/repo_folders.md) - Get acquainted with the project folders.
+* [Variable types](decomp_info/types.md) - See what typedefs we use on this project.
+* [Declaring globals](decomp_info/globals.md) - How we define globals on GTA2 and how they work.
+* [Patching](decomp_info/patching.md) - Patching our functions into original GTA2 executable.
 
 ## Very important classes
 
 Some classes are essential since they are used almost everywhere on GTA2:
 
-* [Fix16](classes/fix16.md) - This is how the game avoids using floating points (except when it really need them).
-* [Ang16](classes/ang16.md) - Another "Fix16" but for angles and rotations. They are fixed point but with less precision.
+* [Fix16](gameinfo/fix16.md) - This is how the game avoids using floating points (except when it really need them).
+* [Ang16](gameinfo/ang16.md) - Another "Fix16" but for angles and rotations. They are fixed point but with less precision.
 
 ## Some questions
 
@@ -43,5 +43,5 @@ The version 9.6f has different addresses from 10.5. However, we still look into 
 
 There are mainly two ways to contribute for this project:
 
-* [Matching functions](general/matching_funcs.md) - How to match new functions and include them into the repository.
-* [Renaming functions or attributes](general/renaming.md) - There are many unknown attributes for many classes and way many functions without a proper name. You can figure them out and rename according to what it does.
+* [Matching functions](decomp_info/matching_funcs.md) - How to match new functions and include them into the repository.
+* [Renaming functions or attributes](decomp_info/renaming.md) - There are many unknown attributes for many classes and way many functions without a proper name. You can figure them out and rename according to what it does.

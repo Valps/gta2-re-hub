@@ -18,16 +18,16 @@ nav:
   - 'Getting Started': getting_started.md
   - 'How to contribute' : how_contribute.md
   - Decomp info :
-    - Index : general/index.md
-    - 'Repo Folders' : general/repo_folders.md
-    - 'Var types' : general/types.md
-    - 'Markers' : general/markers.md
-    - 'Globals' : general/globals.md
-    - 'Patching' : general/patching.md
-    - 'IDA scripts' : general/ida_scripts.md
-    - 'Function Diff' : general/diff.md
-    - 'Renaming' : general/renaming.md
-    - 'Matching Functions' : general/matching_funcs.md
+    - Index : decomp_info/index.md
+    - 'Repo Folders' : decomp_info/repo_folders.md
+    - 'Var types' : decomp_info/types.md
+    - 'Markers' : decomp_info/markers.md
+    - 'Globals' : decomp_info/globals.md
+    - 'Patching' : decomp_info/patching.md
+    - 'IDA scripts' : decomp_info/ida_scripts.md
+    - 'Function Diff' : decomp_info/diff.md
+    - 'Renaming' : decomp_info/renaming.md
+    - 'Matching Functions' : decomp_info/matching_funcs.md
   - Game info :
     - Index : gameinfo/index.md
     - 'Fix16' : gameinfo/fix16.md
