@@ -1,6 +1,6 @@
 # Adding new pages to Frontend (WIP)
 
-In this example we will create a new page for the Frontend: an options menu page. Instead of just opening GTA2 manager, we will create a menu with two options: one sets a global boolean flag, and the other opens the GTA2 manager.
+In this example we will create a new page for the Frontend: an **options menu page**. Instead of just opening GTA2 manager, we will create a menu with two options: one sets a global boolean flag, while the other opens the GTA2 manager.
 
 We can summarize the addition of pages on the following list:
 
@@ -11,9 +11,10 @@ We can summarize the addition of pages on the following list:
 - Set what your keyboards keys should do in that page (ESC, left/right arrows etc)
 - Configure the horizontal selection of an item (if there is one)
 
-## Increase the limit of pages
+## Increasing the limit of pages
 
 First you probably need to increase the limit of Frontend pages. The original has a limit of 17 pages, and most of them are already used. Originally in `Frontend.hpp` we have
+
 ```c
 struct Frontend
 {
@@ -22,7 +23,7 @@ struct Frontend
     // ...
 }
 ```
-You must change it to something like
+You should change it to something like
 ```c
 struct Frontend
 {
@@ -32,9 +33,9 @@ struct Frontend
 }
 ```
 
-## Add an enum for the new page
+## Adding an enum for the new page
 
-important / We will call it `MENUPAGE_OPTIONS_16`:
+Since we will refer to the new page index many times it's important to set an enum for it. We will call it `MENUPAGE_OPTIONS_16` and add in `MenuPages` enum in `Frontend.hpp`:
 
 ```c
 enum MenuPages
@@ -71,7 +72,9 @@ Frontend::SetupMenuStringsOptionsElements()
 ```
 Now if the user clicks `OPTIONS` in main menu, he will arrive at our new page.
 
-Now / `gSpectator` 
+Now / `gSpectator`  /
+
+using the function `gText_0x14_704DFC->Find()`. But if you want to skip it (setting the same label for all languages) you just place a literal wide string like `L"OPEN GTA2 MANAGER"`.
 
 
 ```c linenums="1"
@@ -275,7 +278,7 @@ else if (field_C9CD_right_pressed)  // Now set what happens when pressing the ri
 
 ## Configuring the horizontal selection
 
-`Frontend::GetOptionText`
+`Frontend::GetOptionText` / 
 
 ```c linenums="1"  hl_lines="14-26"
 void Frontend::GetOptionText_4B3AF0(u16 menu_page_idx, u16 option_idx, wchar_t** w_buffer)
