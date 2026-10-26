@@ -1,6 +1,6 @@
-# Adding new pages to Frontend (WIP)
+# Adding new pages to Frontend
 
-In this example we will create a new page for the Frontend: an **options menu page**. Instead of just opening GTA2 manager, we will create a menu with two options: one sets a global boolean flag, while the other opens the GTA2 manager.
+In this example we will create a new page for the Frontend: an **options menu page**. Instead of just opening GTA2 manager, we will create a menu with two options: one sets (or clear) a global boolean flag `gSpectator`, while the other opens the GTA2 manager.
 
 We can summarize the addition of pages on the following list:
 
@@ -72,15 +72,30 @@ Frontend::SetupMenuStringsOptionsElements()
 ```
 Now if the user clicks `OPTIONS` in main menu, he will arrive at our new page.
 
-Now / `gSpectator`  /
+Note that `MENUPAGE_GTA2MANAGER` is not actually a frontend page but it triggers the GTA2 manager to open.
 
-using the function `gText_0x14_704DFC->Find()`. But if you want to skip it (setting the same label for all languages) you just place a literal wide string like `L"OPEN GTA2 MANAGER"`.
+Now we want to configure our page:
 
+- How many items/options it should have;
+- How many elements (circles, triangles/arrows, static labels etc);
+- The default item/option which is selected when the user enters the page (normally it's the first one);
+- For each item/option:
+    - Its X and Y position;
+    - Set the text label associated to it;
+    - Choose a type: will pressing enter takes you to another page (type 1)? or it is a selectable item (type 2, e.g. high score stage selection)?
+    - If it's type 1, set the target frontend page;
+    - If it's type 2, set the number of suboptions which are selected using left/right arrows;
+    - If it's type 2, enable which suboptions are available to be selected;
+    - If it's type 2, enable which suboptions will be selected when the user enters the page;
+
+All of that is done on the function `Frontend::SetupMenuStringsOptionsElements`. This is how it should look in our case:
 
 ```c linenums="1"
 Frontend::SetupMenuStringsOptionsElements()
 {
-    // ...
+    // many stuff here...
+    // ....
+
     // Options Page //
 
     // Main settings of the page:
@@ -107,11 +122,12 @@ Frontend::SetupMenuStringsOptionsElements()
             50);
 
     // Enable all options (OFF and ON in this case).
-    u16 enabled_idx3 = 0;
+    // Although it have only two suboptions, this is how it should look for many suboptions:
+    u16 i = 0;
     do
     {
-        pPage->field_4_options_array[0].field_72_horizontal_idx_enabled[enabled_idx3++] = 1;
-    } while (enabled_idx3 <= pPage->field_4_options_array[0].field_7E_horizontal_max_idx);
+        pPage->field_4_options_array[0].field_72_horizontal_idx_enabled[i++] = 1;
+    } while (i <= pPage->field_4_options_array[0].field_7E_horizontal_max_idx);
 
     pPage->field_B8A_option_states[0].field_0_unused = 280;
     pPage->field_B8A_option_states[0].field_2_unused = 163;
@@ -133,7 +149,9 @@ Frontend::SetupMenuStringsOptionsElements()
 }
 ```
 
-Note that `MENUPAGE_GTA2MANAGER` is not actually a frontend page but it triggers the GTA2 manager to open.
+Note that since `gSpectator` is either 0 or 1, we used it to define `field_6E_horizontal_selected_idx`. So when the user enters the options page, he will find the selection at the current status of `gSpectator`.
+
+Also note that we could have used the function `gText_0x14_704DFC->Find()` on calling `wcsncpy` to get the label from `.gxt` file. But in this case we skip it by placing a literal wide string like `L"OPEN GTA2 MANAGER"`. Then it will show the same label for all languages.
 
 
 ## Setting the background scene for the new page
@@ -183,7 +201,9 @@ void Frontend::UpdateMenuScreen_4B6780()
 
 First we need to set what page we arrive when pressing ESC. Since in our case our new page is an options page, then pressing ESC we should return to the initial page (play, options, quit), which is the page `MENUPAGE_START_MENU`. 
 
-Then we go to the function `Frontend::UpdatePageFromUserInput`. On `escape_pressed` we look for the case which goes to `MENUPAGE_START_MENU` and add our switch case there:
+Then we go to the function `Frontend::UpdatePageFromUserInput`. Note that for our second option `OPEN GTA2 MANAGER` we don't need to set what happens when pressing `ENTER`. The original function already set the next page from its target page.
+
+About `ESC` key we go to `escape_pressed` switch: since we want the user to return to main menu when pressing `ESC` on the options page, then we look for the case which goes to `MENUPAGE_START_MENU` and add our switch case there:
 
 ```c linenums="1" hl_lines="16"
 if (field_C9D1_escape_pressed)
@@ -215,7 +235,7 @@ if (field_C9D1_escape_pressed)
 }
 ```
 
-Now we need to configure what happens when we press the right or left arrow buttons:
+Now we need to configure what happens when we press the right or left arrow buttons. It should only do something when the user is selecting the first option `SPECTATOR MODE`. On the same function we go to the `left_pressed` and `right_pressed` codes. It should be something like this:
 
 ```c linenums="1" hl_lines="12-21 40-49"
 if (field_C9CC_left_pressed) // set what happens when pressing the left arrow button
@@ -276,9 +296,9 @@ else if (field_C9CD_right_pressed)  // Now set what happens when pressing the ri
 }
 ```
 
-## Configuring the horizontal selection
+## Setting what shows up in the horizontal selection
 
-`Frontend::GetOptionText` / 
+For last we can set exactly the text that should be displayed of options of type 2 (horizontal selection) on the function `Frontend::GetOptionText()`. In our case we want to display `"SPECTATOR MODE OFF"` if the first option has `field_6E_horizontal_selected_idx == 0` and display `"SPECTATOR MODE ON"` if `field_6E_horizontal_selected_idx != 0`. Then the function should be something like this:
 
 ```c linenums="1"  hl_lines="14-26"
 void Frontend::GetOptionText_4B3AF0(u16 menu_page_idx, u16 option_idx, wchar_t** w_buffer)
@@ -318,6 +338,8 @@ void Frontend::GetOptionText_4B3AF0(u16 menu_page_idx, u16 option_idx, wchar_t**
 ```
 
 ## Final result
+
+After all these changes, this is what we get:
 
 ![Result](../../images/new_frontend_page.png)
 
